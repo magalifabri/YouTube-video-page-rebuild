@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css-reset.css">
+	<link rel="stylesheet" href="youtube.css">
+</head>
+<body>
+
+<!-- NAV -->
+
+	<nav>
+		<div>
+			<svg width="24px" height="24px">
+				<path class="light-grey-icon" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+			</svg>
+		</div>
+		<div>
+			<img height="20px" src="data:image/png;base64,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" alt="">
+		</div>
+		<div id="searchbar">
+			<input type="text" placeholder="Search">
+			<div id ="searchbutton">
+				<svg viewBox="0 0 24 24" width="20px" height="20px">
+					<path class="light-grey-icon" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+				</svg>
+			</div>
+		</div>
+		<div id="icons">
+			<svg width="24px" height="24px">
+				<path class="grey-icon" d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"></path>
+			</svg>
+			<svg width="24px" height="24px">
+				<path class="grey-icon"  d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"></path>
+			</svg>
+			<svg width="24px" height="24px">
+				<path class="grey-icon"  d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path>
+			</svg>
+			<img id="avatar-img-small" width="32px" height="32px"  src="//lh6.googleusercontent.com/-ZFFgFLHZXi0/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucllEOgV7MS9r4z0_i3qcRz5Jax7zg/s88-c-k-c0x00ffffff-no-rj-mo/photo.jpg">
+		</div>
+	</nav>
+
+<!-- VIDEO -->
+
+	<section id="video">
+		<iframe src="https://www.youtube.com/embed/f02mOEt11OQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+
+<!-- VIDEO INFO -->
+
+	<section id="video-info">
+		<p id="video-title">code-fi / lofi beats to code/relax to</p>
+		<div id="viewing-stats">
+			<p>121,085 views • Mar 30, 2020</p>
+			<div>
+				<svg viewBox="0 0 24 24" width="20px" height="20px" viewingBox="0 0 24 24">
+					<path class="light-grey-icon" d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+				</svg>
+				<span>4.1K</span>
+				<svg viewBox="0 0 24 24" width="20px" height="20px" viewingBox="0 0 24 24">
+					<path class="light-grey-icon" d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+				</svg>
+				<span>42</span>
+				<svg viewBox="0 0 24 24" width="20px" height="20px" viewingBox="0 0 24 24">
+					<path class="light-grey-icon" d="M11.7333 8.26667V4L19.2 11.4667L11.7333 18.9333V14.56C6.4 14.56 2.66667 16.2667 0 20C1.06667 14.6667 4.26667 9.33333 11.7333 8.26667Z"></path>
+				</svg>
+				<span>SHARE</span>
+				<svg viewBox="0 0 24 24" width="20px" height="20px" viewingBox="0 0 24 24">
+					<path class="light-grey-icon" d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path>
+				</svg>
+				<span>SAVE</span>
+				<span id="dots">•••</span>
+			</div>
+	</section>
+
+	<!-- MORE VIDEO INFO -->
+
+	<section id="channel-info">
+		<img width="48" src="https://yt3.ggpht.com/a/AATXAJwPhIrleFtWfISuXduLhPeAiK6cTZiX7ZXf2lDP=s48-c-k-c0xffffffff-no-rj-mo">
+		<div id="name-and-subs">
+			<p id="name">The AMP Channel</p>
+			<svg class="checkmark grey-icon" viewBox="0 0 24 24" width="13" height="13" viewingBox="0 0 24 24">
+				<path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"></path>
+			</svg>
+			<p id="subs">36.9K subscribers</p>
+		</div>
+		<button>subscribe</button>
+		<p id="description">As the developer community continues coding away from home, the AMP outreach team wanted to share something we put together to hopefully improve your coding experience. Introducing Code-Fi, our carefully curated mix of relaxing beats to code to.</p>
+		<p id="show-more">show more</p>
+	</section>
+
+<!-- SIDEBAR -->
+
+	<aside>
+		<div id="up-next-autoplay">
+			<p>Up next</p>
+			<p id="autoplay" class="grey-header-13">AUTOPLAY</p>
+		</div>
+
+		<div class="video">
+			<img width="168" src="https://i.ytimg.com/vi/yUpl_HQrBnM/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLDfb0OGAHIz0ykcULoPH7jZDrWALg">
+			<span class="duration">2:00:25</span>
+			<p class="title">Chill Study Beats 5 • jazz & lofi hiphop Mix [2018]</p>
+			<p class="channel">Chillhop Music</p>
+			<p class="views-and-time-posted">5.1M views • 2 years ago</p>
+		</div>
+
+		<hr>
+
+		<div class="video">
+			<img width="168" src="https://i.ytimg.com/vi/f02mOEt11OQ/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&amp;rs=AOn4CLD0zBPiz6LQsSZvNpyHvWCdj9nC3w">
+			<div class="yt-mix-thumbnail">
+				<p>50+</p>
+				<svg viewBox="0 0 24 24" width="24px" height="24px">
+					<path d="M16.94 6.9l-1.4 1.46C16.44 9.3 17 10.58 17 12s-.58 2.7-1.48 3.64l1.4 1.45C18.22 15.74 19 13.94 19 12s-.8-3.8-2.06-5.1zM23 12c0-3.12-1.23-5.95-3.23-8l-1.4 1.45C19.97 7.13 21 9.45 21 12s-1 4.9-2.64 6.55l1.4 1.45c2-2.04 3.24-4.87 3.24-8zM7.06 17.1l1.4-1.46C7.56 14.7 7 13.42 7 12s.6-2.7 1.5-3.64L7.08 6.9C5.78 8.2 5 10 5 12s.8 3.8 2.06 5.1zM1 12c0 3.12 1.23 5.95 3.23 8l1.4-1.45C4.03 16.87 3 14.55 3 12s1-4.9 2.64-6.55L4.24 4C2.24 6.04 1 8.87 1 12zm9-3.32v6.63l5-3.3-5-3.3z"></path>
+				</svg>
+			</div>
+			<p class="title">Mix - code-fi / lofi beats to code/relax to</p>
+			<p class="channel">YouTube</p>
+		</div>
+		
+		<div class="video">
+			<img width="168" src="https://i.ytimg.com/vi/X1uaOtiJ9Vc/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLDFR92jI7c61uC_gPqQ44wh18NYcA">
+			<span class="duration">59:58</span>
+			<p class="title">Concentrate Your Mind ☯ Asian Lofi HipHop Mix</p>
+			<p class="channel">Dreamy</p>
+			<p class="views-and-time-posted">8.2M views • 1 year ago</p>
+			<div class="progress-bar-grey"></div>
+			<div class="progress-bar-red"></div>
+		</div>
+		
+		<div class="video">
+			<img width="168" src="https://i.ytimg.com/vi/5yx6BWlEVcY/hqdefault_live.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLBU0RlSQkQpJO0FmZ5QHCVt50frlA">
+			<p class="title">Chillhop Radio - jazzy & lofi hip hop beats 🐾</p>
+			<p class="channel">Chillhop Music</p>
+			<p class="views-and-time-posted">2.6K watching</p>
+			<p class="live">LIVE NOW</p>
+		</div>
+		 
+		<div class="video">
+			<img width="168" src="https://i.ytimg.com/vi/_OkvnfzL93o/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLCrqZUyS1UViFCO5ApGQJ1at677ZA">
+			<span class="duration">1:08:27</span>
+			<p class="title">🌼 Chillhop Essentials - Spring 2020・chill hiphop beats to...</p>
+			<p class="channel">Chillhop Music</p>
+			<p class="views-and-time-posted">2.3M views • 5 months ago</p>
+		</div>
+		 
+		<div class="video">
+			<img width="168" src="https://i.ytimg.com/vi/fK1y1xCa1u0/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLC4T3q30Yq5q1q4hZFURX2zkh-FRg">
+			<span class="duration">1:19:59</span>
+			<p class="title">Morning Chill ~ Lofi Hip Hop Mix</p>
+			<p class="channel">Feardog</p>
+			<p class="views-and-time-posted">487K views • 2 months ago</p>
+		</div>
+		 
+		<div class="video">
+			<img width="168" src="https://i.ytimg.com/vi/QCXI9lmjUtM/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLCNdgJgFoEJrjhVNQA42Qu3enudSg">
+			<span class="duration">1:19:59</span>
+			<p class="title">Breathing dreams like air (pt. 2) - lofi hip hop mix</p>
+			<p class="channel">Dreamy</p>
+			<p class="views-and-time-posted">491K views • 8 months ago</p>
+		</div>
+		 
+		<div class="video">
+			<img width="168" src="https://i.ytimg.com/vi/NxSDNogkKX0/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLC2BUK9zbW5zeqbTchx33BwGhEV-g">
+			<span class="duration">1:19:59</span>
+			<p class="title">Just wanna stay here forever ~ lofi hip hop mix</p>
+			<p class="channel">Dreamy</p>
+			<p class="views-and-time-posted">4.1M views • 5 months ago</p>
+			<div class="progress-bar-grey"></div>
+			<div class="progress-bar-red"></div>
+		</div>
+		 
+		<div class="video">
+			<img width="168" src="https://i.ytimg.com/vi/D_uLM5i0Z4c/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLCdXs5jVA26LjFmCDS2-cbCKoY6ng">
+			<span class="duration">1:19:59</span>
+			<p class="title">Endless Sunday 😌 [Chillhop / instrumental beats]</p>
+			<p class="channel">Chillhop Music</p>
+			<p class="views-and-time-posted">749K views • 3 weeks ago</p>
+		</div>
+
+		<div class="video">
+			<img width="168" src="https://i.ytimg.com/vi/D-ya6U-pbWo/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLAC4qQOD-2O8iNrZx-WjCh5pgQMwQ">
+			<span class="duration">1:19:59</span>
+			<p class="title">Avatar: The Last Airbender☁️ ~ 1 HOUR OF LOFI CHILLOUT...</p>
+			<p class="channel">Simon Groß</p>
+			<p class="views-and-time-posted">960K views • 4 months ago</p>
+		</div>
+		 
+		<div class="video">
+			<img width="168" src="https://i.ytimg.com/vi/q22uHBl9qxw/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLDMKV-cJ2oKRC9WbP4-A5v5C1GTUA">
+			<span class="duration">1:19:59</span>
+			<p class="title">Solitude ● lofi hip hop mix</p>
+			<p class="channel">Dreamy</p>
+			<p class="views-and-time-posted">1.2M views • 9 months ago</p>
+			<div class="progress-bar-grey"></div>
+			<div class="progress-bar-red"></div>
+		</div>
+	</aside>
+	
+<!-- COMMENTS -->
+
+	<section id="comments">
+		<div id="header">
+			<p>890 Comments</p>
+			<svg class="grey-icon" viewBox="0 0 24 24" width="24" height="24" viewingBox="0 0 24 24">
+				<path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path>
+			</svg>
+			<p id="sort">sort by</p>
+		</div>
+
+		<div id="add-comment">
+			<img id="avatar-img-small" width="40px" height="40px"  src="//lh6.googleusercontent.com/-ZFFgFLHZXi0/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucllEOgV7MS9r4z0_i3qcRz5Jax7zg/s88-c-k-c0x00ffffff-no-rj-mo/photo.jpg">
+			<p>Add a public comment...</p>
+			<hr>
+		</div>
+
+		<div class="comment">
+			<img height="40" width="40" src="https://yt3.ggpht.com/a/AATXAJyEiXIlMCe-U5-uysoYa0LHCeWvO9iJyMLc3sUI=s48-c-k-c0xffffffff-no-rj-mo">
+			<div class="name-and-time-posted">
+				<p class="name">Lasklu</p>
+				<p class="time-posted">4 months ago</p>
+			</div>
+			<p class="content">I am just looking for the part where the guy copies code from stack overflow</p>
+			<div class="likes-dislikes">
+				<svg class="light-grey-icon" viewBox="0 0 24 24" width="15px" height="15px">
+					<path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+				</svg>
+				<p class="amount">7.6K</p>
+				<svg class="light-grey-icon" viewBox="0 0 24 24" width="15px" height="15px">
+					<path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+				</svg>
+				<p class="reply">REPLY</p>
+			</div>
+			<div class="replies">
+				<svg viewBox="0 0 24 24" width="18px" height="18px">
+					<path d="M7 10l5 5 5-5z"></path>
+				</svg>
+				<p>View 63 replies</p>
+			</div>
+		</div>
+
+		<div class="comment">
+			<img height="40" width="40" src="https://yt3.ggpht.com/a/AATXAJz5b4vbtrl0QYfDwooT2L8ns58M8kboSJ8giYoH=s48-c-k-c0xffffffff-no-rj-mo">
+			<div class="name-and-time-posted">
+				<p class="name">WhirlE</p>
+				<p class="time-posted">1 week ago</p>
+			</div>
+			<p class="content">I watched ONE coding tutorial YouTube, ONE.</p>
+			<div class="likes-dislikes">
+				<svg class="light-grey-icon" viewBox="0 0 24 24" width="15px" height="15px">
+					<path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+				</svg>
+				<p class="amount">3.6K</p>
+				<svg class="light-grey-icon" viewBox="0 0 24 24" width="15px" height="15px">
+					<path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+				</svg>
+				<p class="reply">REPLY</p>
+			</div>
+			<div class="replies">
+				<svg viewBox="0 0 24 24" width="18px" height="18px">
+					<path d="M7 10l5 5 5-5z"></path>
+				</svg>
+				<p>View 42 replies</p>
+			</div>
+		</div>
+
+		<div class="comment">
+			<img height="40" width="40" src="https://yt3.ggpht.com/a/AATXAJyNqnJxdCCShGF8D6PRTE6LIA1HvFqY73b7Lc3jog=s48-c-k-c0xffffffff-no-rj-mo">
+			<div class="name-and-time-posted">
+				<p class="name">rustyrumi</p>
+				<p class="time-posted">1 week ago</p>
+			</div>
+			<p class="content">Programmer: I am going to finally make a great program today and finish it all by myself!
+			<br><strong>5 min later</strong>
+			<br>S T A C K  O V E R  F L O W</p>
+			<div class="likes-dislikes">
+				<svg class="light-grey-icon" viewBox="0 0 24 24" width="15px" height="15px">
+					<path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+				</svg>
+				<p class="amount">64</p>
+				<svg class="light-grey-icon" viewBox="0 0 24 24" width="15px" height="15px">
+					<path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+				</svg>
+				<p class="reply">REPLY</p>
+			</div>
+			<div class="replies">
+				<svg viewBox="0 0 24 24" width="18px" height="18px">
+					<path d="M7 10l5 5 5-5z"></path>
+				</svg>
+				<p>View 3 replies</p>
+			</div>
+		</div>
+
+	</section>
+</body>
+</html>
